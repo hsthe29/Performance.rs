@@ -1,0 +1,9 @@
+avgs/
+memory-bank/
+plots/
+results/*
+visualization/
+benchmark_*
+*.txt
+*.py
+**/__pycache__/

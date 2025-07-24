@@ -1,0 +1,52 @@
+base_url: "..."
+api_key: "..."
+
+model: "qwen3-30b"
+
+output_prefix_name: benchmark-qwen3-30b-runs-3-batch-1
+output_dir: results
+save_format: csv
+stream_writing: true
+
+runs: 3
+num_concurrent_requests: 1
+
+cases:
+  - input_tokens: 2000
+    output_tokens: 1000
+
+  - input_tokens: 2000
+    output_tokens: 4000
+  
+  - input_tokens: 2000
+    output_tokens: 8000
+
+  - input_tokens: 10000
+    output_tokens: 1000
+
+  - input_tokens: 10000
+    output_tokens: 4000
+
+  - input_tokens: 10000
+    output_tokens: 8000
+
+  - input_tokens: 20000
+    output_tokens: 1000
+
+  - input_tokens: 20000
+    output_tokens: 4000
+  
+  - input_tokens: 20000
+    output_tokens: 8000
+
+  - input_tokens: 50000
+    output_tokens: 1000
+
+  - input_tokens: 50000
+    output_tokens: 4000
+
+  - input_tokens: 100000
+    output_tokens: 1000
+
+  - input_tokens: 100000
+    output_tokens: 4000
